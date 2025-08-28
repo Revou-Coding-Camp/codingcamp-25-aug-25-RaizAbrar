@@ -1,120 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Company Profile</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap" rel="stylesheet">
+    <title>KARNA.co.id</title>
 </head>
-<body class="bg-gradient-to-br from-purple-100 via-indigo-100 to-blue-100 text-gray-800 font-sans text-base scroll-smooth"></body>
-
-  <!-- Wrapper -->
-  <div class="max-w-screen-lg mx-auto shadow-lg border border-gray-300 mt-4">
-
-    <!-- Fake Browser Bar -->
-    <div class="flex items-center border-b border-gray-300 px-4 py-2 bg-gray-100">
-      <div class="flex space-x-2">
-        <div class="w-3 h-3 bg-red-500 rounded-full"></div>
-        <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
-        <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-      </div>
-      <div class="ml-4 font-semibold">Company Profile</div>
-      <div class="ml-auto flex items-center space-x-2 text-sm text-gray-600">
-        <i class="fas fa-lock"></i>
-        <span>www.mywebsite.com</span>
-      </div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="flex justify-center gap-4 py-4 bg-white sticky top-0 z-10 border-b border-gray-200">
-      <a href="#home" class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">Home</a>
-      <a href="#profile" class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">Our Profile</a>
-      <a href="#portfolio" class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">Portfolio</a>
-      <a href="#message" class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">Message Us</a>
-    </nav>
-
-    <!-- Home -->
-    <section id="home" class="px-6 py-10 text-center">
-      <h1 class="text-2xl font-bold mb-2">Hi <span id="welcomeName">Pengunjung</span>, Welcome To Our Website!</h1>
-      <p class="text-lg text-gray-600">This is our first website project using HTML, CSS, and JavaScript.</p>
-    </section>
-
-    <!-- Profile -->
-    <section id="profile" class="bg-gray-50 py-10 px-6">
-      <h2 class="text-xl font-bold mb-4 text-center">Our Profile</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div>
-           <img src="assets/images/company-banner.jpg" alt="Company Banner" class="w-full rounded shadow" /> 
+<body>
+    <!-- wrapper -->
+     <div class="max-w-screen-lg mx-auto  mt-4">
+     <!-- header -->
+      <header class="bg-#FFF9F0 py-4 rounded-full shadow-md">
+        <div  class="container flex items-center justify-between space-x-2">
+        <div class="flex items-center space-x-2">
+            <img src="photo/companylogo.png" alt="karna logo" class="h-12 pl-6" /> 
+            <span class="font-bold text-3xl text-[#A60000]">KARNA</span> 
         </div>
-        <div class="space-y-4">
-          <p><b>About Us:</b> We are a tech company focusing on software development and digital innovation.</p>
-          <p><b>Vision:</b> To be a leading software company that drives the future of technology in Southeast Asia.</p>
-          <p><b>Mission:</b> Deliver high-quality, user-focused digital solutions to businesses and communities.</p>
+         <!-- navigation -->
+         <nav class="pr-5">
+            <a href="#home" class="py-2 border border-red-300 rounded-full hover:bg-[#A60000] hover:text-white font-bold mx-auto p-4">Home</a>
+            <a href="#profile" class="py-2 border border-red-300 rounded-full hover:bg-[#A60000] hover:text-white font-bold p-4">Our Profile</a>
+            <a href="#portfolio" class="py-2 border border-red-300 rounded-full hover:bg-[#A60000] hover:text-white font-bold p-4">Portfolio</a>
+            <a href="#message" class="py-2 border border-red-300 rounded-full hover:bg-[#A60000] hover:text-white font-bold p-4">Message Us</a>
+         </nav>
         </div>
-      </div>
-    </section>
+      </header>
+ 
+     <!-- home -->
+      <section>
+        <section id="home" class="container text-center pt-8 px-35">
+            <h1 class="font-extrabold text-xl">HALO <span class="text-[#A60000]">PENGUNJUNG !</span> </h1>
+            <p class="pt-2">Selamat datang di <span class="font-bold">KARNA.co.id</span> Tempat dimana anda menemukan budaya lokal Indonesia dalam balutan modern
+            </p>
+        </section>
+        <img src="photo/bannercompany.png" alt="karna logo" class="my-5 mx-auto border rounded-xl shadow-md" >
+      </section>
+      
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="py-10 px-6">
-      <h2 class="text-xl font-bold mb-4 text-center">Our Portfolio</h2>
-      <div class="grid md:grid-cols-3 gap-4">
-        <img src="assets/images/mobile-app-development.jpg" alt="Mobile App" class="mb-2 w-full rounded" />
-        <img src="assets/images/website-projects.jpg" alt="Website Projects" class="mb-2 w-full rounded" />
-        <img src="assets/images/tech-consultancy.jpg" alt="Tech Consultancy" class="mb-2 w-full rounded" />
-    </div>
-    </section>
-
-    <!-- Message Us -->
-    <section id="message" class="bg-gray-50 py-10 px-6">
-      <h2 class="text-xl font-bold mb-4 text-center">Message Us</h2>
-      <div class="flex flex-col md:flex-row gap-6">
-        <form id="messageForm" class="flex flex-col gap-3 md:w-1/2">
-          <label>
-            Nama:
-            <input type="text" name="name" required class="w-full border px-3 py-2 rounded" />
-          </label>
-          <label>
-            Tanggal Lahir:
-            <input type="date" name="birthdate" required class="w-full border px-3 py-2 rounded" />
-          </label>
-          <label>Jenis Kelamin:</label>
-          <div class="flex gap-4 text-sm">
-            <label><input type="radio" name="gender" value="Laki-Laki" /> Laki-Laki</label>
-            <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
-          </div>
-          <label>
-            Pesan:
-            <textarea name="message" rows="4" required class="w-full border px-3 py-2 rounded"></textarea>
-          </label>
-          <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded">
-            Submit
-          </button>
-        </form>
-
-        <div id="infoBox" class="border p-4 rounded md:w-1/2 bg-white text-sm leading-relaxed">
-          <div class="mb-2 font-bold">Current time :</div>
-          <div id="currentTime" class="mb-4">Loading...</div>
+     <!-- profile -->
+      <section id="profile" class="container my-25">
+        <div class="grid md:grid-cols-2 gap-8">
           <div>
-            <b>Nama:</b> - <br />
-            <b>Tanggal Lahir:</b> - <br />
-            <b>Jenis Kelamin:</b> - <br />
-            <b>Pesan:</b> -
+             <img src="photo/companybanner.png" alt="Company Banner" class="h-full rounded-xl shadow" /> 
+          </div>
+          <div class="space-y-4 ">
+            <h2 class="text-2xl font-extrabold mb-4 mt-8 text-center text-[#A60000]">TENTANG KAMI</h2>
+            <p>Kami adalah perusahaan yang fokus pada pengembangan produk yang mengangkat budaya lokal Indonesia dengan sentuhan modern.</p>
+            <p><b>Visi:</b> Menjadi perusahaan terdepan yang mempromosikan kekayaan budaya Indonesia ke kancah global.</p>
+            <p><b>Misi:</b> Menghadirkan produk berkualitas tinggi yang menggabungkan elemen tradisional dan modern untuk memenuhi kebutuhan pasar global.</p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="text-xs text-center py-3 border-t border-gray-200">
-      &copy; 2025 RevoU Mini Project | Created by Keyla ✨
-    </footer>
-  </div>
+      </section>
 
-  <script src="js/script.js"></script>
+     <!-- message -->
+      <section id="message"> 
+
+      </section>
+
+     <!-- footer -->
+    </div>
+
 </body>
 </html>
