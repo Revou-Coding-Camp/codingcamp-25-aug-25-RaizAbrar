@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styl1e.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>KARNA.co.id</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
          <nav class="pr-5">
             <a href="#home" class="py-2 border border-red-300 rounded-full hover:bg-[#A60000] hover:text-white font-bold mx-auto p-4">Home</a>
             <a href="#profile" class="py-2 border border-red-300 rounded-full hover:bg-[#A60000] hover:text-white font-bold p-4">Our Profile</a>
-            <a href="#portfolio" class="py-2 border border-red-300 rounded-full hover:bg-[#A60000] hover:text-white font-bold p-4">Portfolio</a>
+            <a href="#produk" class="py-2 border border-red-300 rounded-full hover:bg-[#A60000] hover:text-white font-bold p-4">Product</a>
             <a href="#message" class="py-2 border border-red-300 rounded-full hover:bg-[#A60000] hover:text-white font-bold p-4">Message Us</a>
          </nav>
         </div>
@@ -35,46 +35,128 @@
       <!-- home -->
       <section>
         <section id="home" class="container text-center pt-8 px-35">
-            <h1 class="font-extrabold text-xl">HALO <span class="text-[#A60000]">PENGUNJUNG !</span> </h1>
+            <h1 class="font-extrabold text-2xl">Halo <span id="pengunjung" class="text-[#A60000]">Pengunjung</span> ! </h1>
             <p class="pt-2">Selamat datang di <span class="font-bold">KARNA.co.id</span> Tempat dimana anda menemukan budaya lokal Indonesia dalam balutan modern
             </p>
         </section>
         <img src="photo/bannercompany.png" alt="karna logo" class="my-5 mx-auto border rounded-xl shadow-md" >
       </section>
-      
+      <hr/>
 
-     <!-- profile -->
+       <!-- profile -->
       <section id="profile" class="container my-25">
         <div class="grid md:grid-cols-2 gap-8">
           <div>
              <img src="photo/companybanner.png" alt="Company Banner" class="h-full rounded-xl shadow" /> 
           </div>
           <div class="space-y-4 ">
-            <h2 class="text-2xl font-extrabold mb-4 mt-8 text-center text-[#A60000]">TENTANG KAMI</h2>
-            <p>Kami adalah perusahaan yang fokus pada pengembangan produk yang mengangkat budaya lokal Indonesia dengan sentuhan modern.</p>
+            <h2 class="text-2xl font-extrabold mb-4 mt-8 text-center items-center text-[#A60000]">TENTANG KAMI</h2>
+            <p>Menghadapi tantangan klaim budaya di era digital, kami berinisiatif memperkuat citra Indonesia dengan memodernisasi produk tradisional. Melalui kolaborasi dengan pengrajin lokal, kami fokus pada re-packaging agar setiap produk menjadi duta budaya yang menceritakan kisahnya secara elegan ke panggung dunia.</p>
             <p><b>Visi:</b> Menjadi perusahaan terdepan yang mempromosikan kekayaan budaya Indonesia ke kancah global.</p>
             <p><b>Misi:</b> Menghadirkan produk berkualitas tinggi yang menggabungkan elemen tradisional dan modern untuk memenuhi kebutuhan pasar global.</p>
           </div>
         </div>
-
       </section>
+      <hr/>
 
-     <!-- message -->
-      <section id="message"> 
+      <!-- product -->
+      <section id="produk" class="container my-25">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-extrabold text-[#A60000] mb-2">Produk Kami</h2>
+            <p class="text-gray-600">
+                Jelajahi berbagai produk kami yang menggabungkan budaya lokal<br>
+                dengan desain modern untuk memenuhi kebutuhan Anda.
+            </p>
+        </div>
 
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="photo/cenderamata-banner.png" alt="Cenderamata Khas Indonesia" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Cenderamata</h3>
+                    <p class="text-gray-700">
+                        Temukan koleksi kerajinan tangan otentik yang dibuat oleh para artisan lokal. Setiap item memiliki cerita dan keunikan tersendiri, sempurna sebagai hadiah atau koleksi pribadi.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="photo/makanan-banner.png" alt="Snack dan Makanan Tradisional Indonesia" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Snack dan Makanan</h3>
+                    <p class="text-gray-700">
+                        Nikmati cita rasa asli Indonesia melalui pilihan snack dan makanan tradisional kami. Diproses dari bahan-bahan berkualitas untuk menjaga keaslian rasanya.
+                    </p>
+                </div>
+            </div>
+        </div>
       </section>
+    <hr/>
 
+      <!-- message us -->
+      <section id="message" class="container mx-auto py-12 px-4">
+
+        <header class="text-center mb-10">
+            <h2 class="text-3xl font-extrabold text-[#A60000] mb-2">Message Us</h2>
+            <p class="text-gray-600">
+                Hubungi kami untuk informasi lebih lanjut<br>
+                atau pertanyaan seputar produk dan layanan kami.
+            </p>
+        </header>
+    
+        <div class="max-w-xl mx-auto">
+    
+            <form onsubmit="return validateForm()">
+    
+                <div class="flex flex-col md:flex-row md:items-center mb-4">
+                    <label for="nama" class="font-bold w-full md:w-1/3 mb-1 md:mb-0">Nama :</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" class="border border-[#A60000] p-2 rounded-lg w-full md:w-2/3">
+                </div>
+    
+                <div class="flex flex-col md:flex-row md:items-center mb-4">
+                    <label for="nomortelepon" class="font-bold w-full md:w-1/3 mb-1 md:mb-0">Nomor Telepon :</label>
+                    <input type="tel" id="nomortelepon" name="nomortelepon" placeholder="Contoh: 08123456789" class="border border-[#A60000] p-2 rounded-lg w-full md:w-2/3">
+                </div>
+    
+                <div class="flex flex-col md:flex-row md:items-center mb-4">
+                    <label for="tanggallahir" class="font-bold w-full md:w-1/3 mb-1 md:mb-0">Tanggal Lahir :</label>
+                    <input type="date" id="tanggallahir" name="tanggallahir" class="border border-[#A60000] p-2 rounded-lg w-full md:w-2/3 text-gray-500">
+                </div>
+    
+                <div class="flex flex-col md:flex-row md:items-center mb-4">
+                    <label class="font-bold w-full md:w-1/3 mb-1 md:mb-0">Jenis Kelamin :</label>
+                    <div class="flex space-x-4 w-full md:w-2/3">
+                        <label><input type="radio" name="jeniskelamin" value="Laki-laki" class="mr-1"> Laki-laki</label>
+                        <label><input type="radio" name="jeniskelamin" value="Perempuan" class="mr-1"> Perempuan</label>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col md:flex-row mb-6">
+                    <label for="pesan" class="font-bold w-full md:w-1/3 mb-1 md:mb-0 pt-2">Pesan :</label>
+                    <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini..." class="border border-[#A60000] p-2 rounded-lg w-full md:w-2/3 h-32"></textarea>
+                </div>
+    
+                <div class="text-right">
+                    <button type="submit" class="bg-[#A60000] text-white font-bold py-2 px-6 rounded-xl hover:bg-red-800 transition duration-300">Kirim Pesan</button>
+                </div>
+    
+            </form>
+            <section id="display-area" class="container border border-[#A60000] rounded-xl my-[20px] px-4 py-20">
+            </section>
+        </div>
+    </section>
+      
 
      </main>
      
 
      <!-- footer -->
-      <footer class="bg-#FFF9F0 py-4 rounded-full shadow-md mt-8">
-        <div class="container text-center text-sm text-gray-600">
+      <footer class="footer">
             &copy; 2024 KARNA.co.id. All rights reserved.
-        </div>
       </footer>
     </div>
-<script src="js/sc1ript.js"></script>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>

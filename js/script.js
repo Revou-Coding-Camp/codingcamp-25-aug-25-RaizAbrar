@@ -1,22 +1,56 @@
-// Show welcome popup when the page loads
-showWelcomePopup();
+console.log("Hello World!")
 
-// Function to show a welcome popup and set the user's name
-function showWelcomePopup() {
-    let userName = prompt("Please enter your name:");
-    // If the user clicks "Cancel", userName will be null
-    if (userName != '') {
-        document.getElementById('welcome-user').innerHTML = userName;
-    }
+// ambil nama pengunjung
+function greet (){
+    let username = prompt("Masukkan Nama Anda:");
+    document.getElementById("pengunjung").innerText = username;
 }
+greet();
 
+// form valid atau nggak
 function validateForm() {
-    const nameInput = document.getElementById('name-input');
+    const nama = document.getElementById("nama").value;
+    const nomertelepon = document.getElementById("nomortelepon").value; 
+    const tanggallahir = document.getElementById("tanggallahir").value;
+    const pesan = document.getElementById("pesan").value;
+    const jeniskelaminInput = document.querySelector('input[name="jeniskelamin"]:checked'); 
 
-    if (nameInput.value === '') {
-        alert('Please enter your name.');
-    } else {
-        document.getElementById('message-output').innerHTML = `Thank you, ${nameInput.value}, for your message!`;
-        nameInput.value = ''; // Clear the input field after submission
+    if (nama === "") {
+        alert("Nama harus diisi");
+        return false;
     }
+    if (nomertelepon === "") {
+        alert("Nomer Telepon harus diisi");
+        return false;
+    }
+    if (tanggallahir === "") {
+        alert("Tanggal Lahir harus diisi");
+        return false;
+    }
+    if (jeniskelaminInput === null) { 
+        alert("Jenis Kelamin harus dipilih");
+        return false;
+    }
+    if (pesan === "") {
+        alert("Pesan harus diisi");
+        return false;
+    }
+
+    const nilaiJenisKelamin = jeniskelaminInput.value;
+    const displayArea = document.getElementById("display-area");
+    const submittedContent = `
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-bold mb-4 border-b pb-2">Pesan Terkirim:</h3>
+            <p><strong>Nama:</strong> ${nama}</p>
+            <p><strong>Nomor Telepon:</strong> ${nomertelepon}</p>
+            <p><strong>Tanggal Lahir:</strong> ${tanggallahir}</p>
+            <p><strong>Jenis Kelamin:</strong> ${nilaiJenisKelamin}</p> 
+            <p><strong>Pesan:</strong> ${pesan}</p>
+        </div>
+    `; 
+    displayArea.innerHTML = submittedContent; 
+    
+    alert("pesan berhasil ditulis");
+
+    return false; 
 }

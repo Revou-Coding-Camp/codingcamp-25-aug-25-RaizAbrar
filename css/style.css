@@ -1,11 +1,9 @@
-.banner-img {
-    height: 500px;
-    background-image: url(https://picsum.photos/1000);
-    background-size: cover;
-    background-position: center;
-}
-
-section {
-    min-height: 500px;
-    align-content: center;
-}
+/* Ingin coba pakai CSS eksternal sisanya pakai tailwind karna sudah terlanjur */
+.footer {
+    background-color: #A50000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px; 
+  }
